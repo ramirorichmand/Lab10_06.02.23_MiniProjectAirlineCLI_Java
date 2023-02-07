@@ -1,11 +1,9 @@
 import java.util.Scanner;
+import java.util.UUID;
 
 public class Main {
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Passenger passenger = new Passenger();
-        Flight flight = new Flight();
         Booking booking = new Booking();
 
         while (true){
@@ -17,18 +15,19 @@ public class Main {
             System.out.println("4. Book passenger onto a flight");
             System.out.println("5. Cancel a flight");
             System.out.println("6. Exit system");
+            System.out.println("Enter a number from 1 to 6: ");
 
             int choice = sc.nextInt();
 
             switch (choice){
                 case 1:
-                    flight.addFlight();
+                    booking.addFlight();
                     break;
                 case 2:
-                    flight.displayAllFlights();
+                    booking.displayAllFlights();
                     break;
                 case 3:
-                    flight.addPassenger();
+                    booking.createPassenger();
                     break;
                 case 4:
                     booking.bookPassenger();
@@ -47,10 +46,6 @@ public class Main {
 
 
     }
-
-
-
-
 
 
 

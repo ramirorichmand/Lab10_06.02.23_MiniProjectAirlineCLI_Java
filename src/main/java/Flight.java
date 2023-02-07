@@ -1,23 +1,24 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.UUID;
 
 public class Flight {
+
+    //properties
     private String destination;
     private String flightID;
     private List<Passenger>passengers;
 
-//    public Flight (){
-//        passengers = new ArrayList<>();
-//    }
 
+//constructor
     public Flight(String destination, String flightID) {
         this.destination = destination;
         this.flightID = flightID;
         this.passengers = new ArrayList<>();
 
     }
-    
+//getters & setters
     public String getDestination() {
         return destination;
     }
@@ -42,26 +43,15 @@ public class Flight {
         this.passengers = passengers;
     }
 
-    public void addFlight(){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter flight destination: ");
-        setDestination(sc.nextLine());
-        System.out.println("Enter flight ID: ");
-        setFlightID(sc.nextLine());
-    }
+//method
 
-    public void addPassenger(){
-        Passenger passenger = null;
+    public void addPassenger(Passenger passenger){
         passengers.add(passenger);
     }
 
 
-    public void displayAllFlights() {
-        Flight flights = new Flight;
-        for (Flight flight : flights);
-        System.out.println("Destination: " + this.destination + "ID: " + flightID);
     }
 
-    public void addPassengers(Passenger passenger) {
-    }
-}
+
+
+

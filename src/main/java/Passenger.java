@@ -1,14 +1,15 @@
 public class Passenger {
     private String name;
-    private int passengerID;
+    private String passengerID;
     private String contact;
 
-    public Passenger(String name, int passengerID, String contact) {
+    public Passenger(String name, String passengerID, String contact) {
         this.name = name;
         this.passengerID = passengerID;
         this.contact = contact;
     }
 
+//getters & setters
    public String getName() {
         return name;
     }
@@ -17,11 +18,11 @@ public class Passenger {
         this.name = name;
     }
 
-    public int getPassengerID() {
+    public String getPassengerID() {
         return passengerID;
     }
 
-    public void setPassengerID(int passengerID) {
+    public void setPassengerID(String passengerID) {
         this.passengerID = passengerID;
     }
 
