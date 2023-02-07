@@ -8,15 +8,12 @@ public class Booking {
     //properties
     private List<Flight> flights;
     private List<Passenger> passengers;
-//     private Flight flight;
-//     private Passenger passenger;
+
 
     // constructor
     public Booking() {
         this.flights = new ArrayList<>();
         this.passengers = new ArrayList<>();
-//         this.flight=flight;
-//         this.passenger = passenger;
 
     }
 
